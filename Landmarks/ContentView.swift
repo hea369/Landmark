@@ -11,8 +11,14 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Turtle Rock")
-                .font(.headline)
-                .foregroundColor(.pink)
+                .font(.title)
+            HStack {
+                Text("Joshua Tree National Park")
+                    .font(.subheadline)
+                Spacer()
+                Text("California")
+                    .font(.subheadline)
+            }
         }
         .padding()
     }
